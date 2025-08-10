@@ -1,0 +1,21 @@
+:root {
+    --color-background-top: #f93;
+    --color-background-bottom: #ff6;
+}
+
+body {
+    margin: 0;
+}
+
+#demonstration-view {
+    background: linear-gradient(
+        0deg,
+        var(--color-background-top) 0%,
+        var(--color-background-bottom) 100%
+    );
+}
+
+#impressum-view {
+    color: #bbb;
+    background-color: #222;
+}

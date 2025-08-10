@@ -1,0 +1,72 @@
+:root {
+	--col-fg: #dedede;
+	--col-bg-light: #161616;
+	--col-bg-dark: black;
+
+	--col-gray: #323232;
+	--col-orange: #ff9030;
+	--col-yellow: #ffff60;
+	--col-yellow: #ffff60;
+
+	--fsize-header: 1.5em;
+
+	font-family: "Kanit";
+	color: var(--col-fg);
+	background: linear-gradient(0deg, var(--col-bg-dark) 0%, var(--col-bg-light) 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#header {
+	background-color: var(--col-bg-light);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1rem 3rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: 1px solid var(--col-gray);
+}
+
+#header nav {
+	display: flex;
+	gap: 3rem;
+}
+
+#header a {
+	font-size: var(--fsize-header);
+
+	color: var(--col-fg);
+	text-decoration: none;
+}
+
+#header a:hover {
+	background: linear-gradient(90deg, var(--col-orange), var(--col-yellow) 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#lettering {
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "Kanit";
+	src: url("assets/Kanit-Regular.ttf") format("truetype");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Kanit";
+	src: url("assets/Kanit-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+}
