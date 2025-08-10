@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="tutorial.css">
+        <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+        <title>Tutorial – Interscore</title>
+    </head>
+
+    <body>
+        <!-- TODO button that leads back -->
+        <div class="title-container">
+            <a class="button blue" href="https://mminl-de.github.io/interscore">←</a>
+            <h1>Tutorial</h1>
+        </div>
+
+	    <h2>Anforderungen</h2?>
+        <ul>
+            <li>Handy (Android oder iOS) oder eine GoPro 7 oder höher</li>
+            <li>Laptop (Windows oder Linux)</li>
+            <li>weiterer Bildschirm</li>
+        </ul>
+
+        <h2>Funktionsweise</h2>
+        <p>Wir verbinden Ihre Kamera (ob Handy oder GoPro) und das Kampfgericht mit unserem Server, welcher anschließend das Overlay hinzufügen und an Ihre ausgewählte Streamingplattform weiterleiten wird.</p>
+
+        <!-- TODO ADD collapse heading with the usual buttons -->
+        <h2>Kamera einrichten</h2>
+        <p>Wir empfehlen, eine Handy als Kamera zu wählen, da die Einrichtung deutlich einfacher ist und die Streaming-Qualität von GoPros zu wünschen übrig lassen.</p>
+        <!-- TODO FIX h3 -->
+        <h3>Handy</h3>
+        <ol>
+            <!-- TODO fix a-href links -->
+            <li>Gehen sie in den Google Play Store und installieren sie <a href="https://play.google.com/store/apps/details?id=com.streamlabs">Streamlabs</a>.</li>
+            <li>Öffnen Sie die App.</li>
+            <li>Klicken Sie auf <i>Weiter</i>.</li>
+            <li>Erlauben Sie der App, ihre Kamera und Mikrofon zu benutzen, falls Sie gefragt werden.</li>
+            <li>Wählen Sie <i>Kamera Streamen</i> aus und drücken Sie auf <i>Weiter</i>.</li>
+            <li>Überspringen Sie die Frage nach dem Layout. Das ist hier nicht entscheidend.</li>
+            <li>Drücken Sie auf <i>Go Live</i> unten in der Mitte.</li>
+            <li>Scrollen Sie im auftauchenden Menu ganz nach unten. Wählen Sie dort <i>Benutzerdefiniertes RTMP</i> aus.</li>
+            <li>Füllen Sie im auftauchenden Menu die Lücken wie folgt aus:</li>
+            <ul>
+                <li>Name: radball</li>
+                <li>URL: rtmp://mminl.de/interscore/rtmp/1</li>
+                <!-- TODO EDIT "X zeichen" -->
+                <li>Stream-Key: Dieser wurde Ihnen per E-Mail zugeschickt und sollte X Zeichen haben. <b>Es ist sehr wichtig, dass sie sich bei der URL und dem Stream-Key nicht vertippen! Falls der Stream kein Bild zeigt, liegt es wahrscheinlich daran!</b></li>
+            </ul>
+            <li>Klicken Sie auf <i>Speichern</i>. Sie landen wieder im Startbildschirm mit Ihrem Kamerabild.</li>
+            <!-- TODO ASK sind GO LIVE und LIVE GEHEN nicht dasselbe? -->
+            <li>Klicken Sie erneut auf <i>Live gehen</i>. Diesmal taucht ein anderes Menu auf.</li>
+            <li>Klicken Sie auf das Dropdown-Menu und wählen Sie <i>radball</i> aus.</li>
+            <li>Nun sollte die App so aussehen. Unten sollte <i>Anhalten</i> stehen und oben die Zeit, die Sie bereits live sind sowie Ihre Verbindungsqualität.</li>
+        </ol>
+
+        <h3>GoPro</h3>
+        TODO
+
+        <h3>Tipps zur Positierung</h3>
+        <p>Wir empfehlen, die Kamera so hoch wie möglich zu positionieren. Außerdem empfehlen wir, falls Sie die Möglichkeit haben, die Weitwinkelfunktion Ihrer Kamera zu nutzen und die Kamera in der Mitte des Spielfeldes zu positionieren. Falls dies nicht möglich ist, sonst an einer Ecke des Spielfeldes, sodass das gesamte Spielfeld zu sehen ist.<br>Weiterhin sollte der Winkel der Kamera so eingestellt sein, dass das Spielfeld im unteren Teil der Kamera ist. Das stellt sicher, dass die Spielanzeige usw. die Sicht nicht blockiert.</p>
+
+        <h2>Kampfgericht einrichten</h2>
+        <p>
+            Wir unterstützen Windows, Linux und macOS. Da Letzteres von uns nicht aktiv getestet wird, empfehlen wir Windows oder Linux.<br>
+            Schließen Sie den Bildschirm an, damit auch die Halle die Ergebnisse sehen kann.
+        </p>
+
+        <h3>Download</h3>
+        <p>Laden Sie <a href="https://mminl.de/interscore/kampfgericht">hier</a> die neueste Version des Kampfgerichts herunter.
+
+        <h3>Benutzung</h3>
+        <!-- TODO ADD imgs -->
+        <p>Beim Öffnen des Programms sollten zwei Fenster geöffnet werden. ![IMG rentnerend_input.png] ![IMG rentnerend_display.png] Das Schwarze Fenster ist das Fenster für die Halle. Das andere ist für das Kampfgericht selbst.</p>
+        <p>Die Spiele sind bereits alle eingetragen. Die Spielstände werden pro Spiel gespeichert. Um immer die aktuellsten Ergebnisse im Livestream anzuzeigen, empfehlen wir, so schnell wie möglich nach Ende eines Spieles auf das nächste umzuschalten. Dies gilt auch für das letzte Spiel! Spielen sie vor dem Spieltag einfach mal ein bisschen mit dem Program herum, um es kennenzulernen.</p>
+
+        <h2>Einen Streamingdienst auswählen</h2>
+        <p>Sie können sich aussuchen, ob Sie über Ihren eigenen oder über unseren Kanal streamen möchten. Falls Sie unseren wählen, müssen Sie nichts weiter tun. Falls Sie Ihren nutzen möchten, müssen Sie die RTMP-URL sowie Ihren Streaming-Key beschaffen. Außerdem müssen Sie dafür sorgen, dass der Stream auch läuft. Die folgenden Anleitungen für verschiedene Platformen zeigen Ihnen, wie.</p>
+        <p>
+            Wir empfehlen Ihnen auf <a href="https://sportdeutschland.tv">Sportdeutschland.TV</a> zu streamen, da dies der offizielle Streaming-Partner des BSOD's und somit des BDR's ist und nach Rahmenverträgen Streams über Sportdeutschland.TV laufen müssen.<br>
+            Für mehr Informationen siehe <a href="https://www.dosb.de/aktuelles/news/detail/dosb-new-media-erwirbt-tv-rechte-von-ard-und-zdf">hier</a>.
+        </p>
+
+        <h3>Sportdeutschland.TV</h3>
+        <b>Achtung: Sportdeutschland.TV schaltet Accounts manuell frei! Dies kann einige Tage in Anspruch nehmen! Planen Sie dies ein.</b>
+        <ol>
+            <li>Erstellen Sie sich einen kostenlosen Account auf <a href="https://sportdeutschland.tv">Sportdeutschland.TV</a>.</li>
+            <li>Optional: Bearbeiten Sie Ihr Profil, damit man Sie erkennt.</li>
+            <li>Warten Sie, bis Ihr Profil freigeschaltet wurde. Dies sollten Sie per E-Mail erfahren.</li>
+            <li>Loggen Sie sich ein und klicken Sie auf Ihr Profilbild.</li>
+            <li>Klicken Sie auf <i>Neuer Beitrag</i>.</li>
+            <li>Wählen Sie <i>Livestream</i> aus, bearbeiten Sie Titel, Beschreibung und Vorschaubild. Geben Sie außerdem den Start der Veranstaltung an.</li>
+            <li>Klicken Sie auf <i>Neue permanente RTMP-URL anlegen</i> und suchen Sie sich einen beliebigen Namen aus. Wählen Sie ihn anschließend im Dropdown-Menu aus.</li>
+            <li>Klicken Sie auf <i>Livestream erstellen</i>.</li>
+            <li>Es sollte ein Pop-Up auftauchen, in dem Textfelder mit <i>Persönliche RTMP-URL</i> und <i>Geheimer Schlüssel</i> stehen. Kopieren Sie beide und schicken Sie sie per E-Mail an uns. Diese benötigen wir, damit wir den Livestream von uns an Sportdeutschland.TV weiterleiten können.</li>
+            <li>Kopieren Sie die <i>Öffentliche Livestream-URL</i>, um sie mit anderen zu teilen. Unter diesem Link können Sie später den Livestream sehen.</li>
+        </ol>
+
+        <h3>YouTube</h3>
+        <p><b>Achtung</b>: Auf Youtube müssen Sie das Livestream-Feature selbst aktivieren. Anschließend müssen Sie 24 Stunden warten. Manchmal erlaubt Youtube Livestreams unter bestimmten Abonnentenzahlen (bspw. unter 1000) auch gar nicht. Prüfen sie dies vorher!</p>
+
+        <!-- TODO ASK twitch? -->
+    </body>
+</html>

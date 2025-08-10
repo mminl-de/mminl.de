@@ -1,0 +1,188 @@
+:root {
+    /* TODO colors
+     * red f66 categories
+     * blue 9cf commands
+     * yellow ff9 arguments
+     * green strings
+     */
+
+    --color-background: #101010;
+    --text-color: #cecece;
+    --text-size: 18px;
+
+    --code-border: #bebebe;
+    --color-code-block: #222;
+    --color-hover: #ffa;
+
+    --color-blue: #9cf;
+    --color-gray: #777;
+    --color-green: #8a8;
+    --color-red: #f66;
+    --color-stdout: #ccc;
+    --color-yellow: #ff9;
+
+    font-family: "SpaceMono";
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--color-background);
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+
+    font-size: var(--text-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    margin: 4rem 0 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.heading {
+    max-width: 500px;
+}
+
+.banner {
+    white-space: pre-wrap;
+}
+
+.button-row {
+    margin: 3rem auto;
+    display: flex;
+    gap: 4rem;
+}
+
+.button {
+    font-size: 2rem;
+    border-bottom: .5rem solid;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+}
+
+.button:has(.github) {
+    border-color: var(--color-gray);
+}
+
+.button .github {
+    color: var(--color-gray);
+}
+
+.button:has(.install) {
+    border-color: var(--color-green);
+}
+
+.button .install {
+    color: var(--color-green);
+}
+
+.list {
+    white-space: pre-wrap;
+    font-size: var(--text-size);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.list-item:hover {
+    background-color: var(--color-hover);
+    color: var(--color-background);
+}
+
+.list-item-content {
+    margin: 1rem;
+    max-width: 500px;
+}
+
+.code-block {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 2px solid var(--code-border);
+    background-color: var(--color-code-block);
+}
+
+.code {
+    white-space: pre-wrap;
+}
+
+.shell-command:hover {
+    background-color: var(--color-hover);
+}
+
+.decreasing-opacity {
+    color: var(--color-stdout);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+#features {
+    width: 600px;
+    height: 32rem;
+}
+
+#curl-command-copy:hover {
+    color: var(--color-background);
+    background-color: var(--color-hover);
+    display: inline-block;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-hover);
+}
+
+@media (max-width: 1032px) {
+    .section-row {
+        display: block;
+    }
+
+    .heading {
+        max-width: unset;
+    }
+
+    .list-item-content {
+        max-width: unset;
+    }
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("assets/SpaceMono-Regular.ttf") format("truetype");
+}

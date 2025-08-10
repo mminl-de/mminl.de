@@ -1,0 +1,136 @@
+:root {
+    --color-background-top: #f93;
+    --color-background-bottom: #ff6;
+
+    --color-green-left: #099;
+    --color-green-right: #0f9;
+
+    --color-blue-left: #06c;
+    --color-blue-right: #09f;
+
+    --color-scrollbar-thumb: #999;
+    --color-scrollbar-thumb-hover: #bbb;
+
+    --size-text: 24px;
+
+    font-family: "Kanit";
+}
+
+body {
+    background: linear-gradient(0deg, var(--color-background-top) 0%, var(--color-background-bottom) 100%);
+
+    max-width: 56rem;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    font-size: var(--size-text);
+}
+
+object {
+    height: 5rem;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+
+    margin: 4rem 0 0 0;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+p, li {
+    font-size: var(--size-text);
+    font-weight: normal;
+    margin-top: 0.5rem;
+}
+
+iframe {
+    border: 0.3rem solid black;
+    border-radius: 12px;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.button {
+    border: 0.3rem solid black;
+    border-radius: 12px;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+
+    font-size: 2rem;
+    padding: 1rem;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: translate(-0.5rem, -0.5rem);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+.green {
+    background: linear-gradient(90deg, var(--color-green-left) 0%, var(--color-green-right) 100%);
+}
+
+.blue {
+    background: linear-gradient(90deg, var(--color-blue-left) 0%, var(--color-blue-right) 100%);
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-background-bottom);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb); 
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scrollbar-thumb-hover); 
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: unset;
+    }
+
+    iframe {
+        width: 90%;
+    }
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("assets/Kanit-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("assets/Kanit-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}

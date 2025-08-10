@@ -1,0 +1,23 @@
+:root {
+    font-family: "Kanit";
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.view {
+    padding: 20px;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("assets/Kanit-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Kanit";
+    src: url("assets/Kanit-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+}
