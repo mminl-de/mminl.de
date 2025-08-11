@@ -1,5 +1,5 @@
 # layout
-- About
+- about
 - features
 - voraussetzungen
 
