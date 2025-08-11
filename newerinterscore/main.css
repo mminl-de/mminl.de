@@ -9,6 +9,8 @@
 	--col-yellow: #ffff60;
 
 	--fsize-header: 1.5em;
+	--fsize-h1: 3em;
+	--fsize-h2: 2em;
 
 	font-family: "Kanit";
 	color: var(--col-fg);
@@ -21,10 +23,28 @@
 	box-sizing: border-box;
 }
 
+.title h1 {
+	font-size: var(--fsize-h1);
+	text-align: center;
+}
+
+.title p {
+	margin: auto;
+	text-align: center;
+
+	width: 80%;
+
+	font-size: var(--fsize-header);
+}
+
+h2 {
+	font-size: var(--fsize-h2);
+}
+
 #header {
 	background-color: var(--col-bg-light);
 
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
