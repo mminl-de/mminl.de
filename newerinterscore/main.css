@@ -6,15 +6,24 @@
 	--col-bg-light: #161616;
 	--col-bg-dark: black;
 	*/
-
 	--col-gray: #323232;
 	--col-orange: #ff9030;
 	--col-yellow: #ffff60;
 
-	--fsize-h1: 5em;
+	--col-orange-darker: #803c00;
+	--col-yellow-darker: #999900;
+
+	--fsize-h1: 4em;
 	--fsize-h2: 3em;
 	--fsize-header: 2em;
 	--fsize-title: 1.5em;
+
+	--gap-button-row: 1em;
+
+	--shadow-s:
+	inset 0 1px 2px white,
+	0 2px 4px black,
+	0 4px 8px black;
 
 	font-family: "Kanit";
 	color: var(--col-fg);
@@ -26,29 +35,38 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+h2 {
+	font-size: var(--fsize-h2);
+}
 
-.title {
-	width: 66rem;
+/* Exists to narrow all the prose down */
+.content {
+	max-width: 70vw;
+	min-width: max-content;
 	margin: 0 auto;
 }
 
+.title {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+
+	width: 55rem;
+
+	/* Margin makes distance to content and navbar */
+	margin: 5rem auto;
+}
 .title h1 {
 	font-size: var(--fsize-h1);
 	text-align: center;
 	line-height: 1em;
-	margin-bottom: 0.5em;
 }
-
 .title p {
-	margin: auto;
 	text-align: center;
 	font-size: var(--fsize-title);
 
 	width: 80%;
-}
-
-h2 {
-	font-size: var(--fsize-h2);
 }
 
 #header {
@@ -67,19 +85,16 @@ h2 {
 
 	border-bottom: 1px solid var(--col-gray);
 }
-
 #header nav {
 	display: flex;
 	gap: 3rem;
 }
-
 #header a {
 	font-size: var(--fsize-header);
 
 	color: var(--col-fg);
 	text-decoration: none;
 }
-
 #header a:hover {
 	background: linear-gradient(90deg, var(--col-orange), var(--col-yellow) 50%);
 	-webkit-background-clip: text;
@@ -90,12 +105,41 @@ h2 {
 	font-weight: bold;
 }
 
+/* TODO NOW */
+.button-row {
+	display: flex;
+	gap: var(--gap-button-row);
+}
+.button {
+	text-decoration: none;
+
+	font-size: var(--fsize-title);
+	border-radius: 10% / 30%;
+
+	padding: 15px 20px;
+
+	color: var(--col-fg-dark);
+}
+.button:hover {
+	box-shadow: var(--shadow-s);
+}
+.main-button {
+	background: linear-gradient(90deg, var(--col-orange), var(--col-yellow) 80%);
+	background-size: 200% 100%;
+	background-position: 0 0;
+	transition: background-position 900ms ease;
+
+	color: var(--col-bg-dark);
+}
+.main-button:hover {
+	background-position: 100% 0;
+}
+
 @font-face {
 	font-family: "Kanit";
 	src: url("assets/Kanit-Regular.ttf") format("truetype");
 	font-weight: normal;
 }
-
 @font-face {
 	font-family: "Kanit";
 	src: url("assets/Kanit-SemiBold.ttf") format("truetype");
