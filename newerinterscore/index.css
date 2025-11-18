@@ -1,6 +1,12 @@
+/* TODO ALL */
+
 :root {
+    --color-background-top: #fff;
+    --color-background-bottom: #f93;
+	/*
     --color-background-top: #f93;
     --color-background-bottom: #ff6;
+	 */
 }
 
 body {

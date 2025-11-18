@@ -1,16 +1,20 @@
 :root {
 	--col-fg: #dedede;
+	--col-bg-light: #222;
+	--col-bg-dark: #161616;
+	/*
 	--col-bg-light: #161616;
 	--col-bg-dark: black;
+	*/
 
 	--col-gray: #323232;
 	--col-orange: #ff9030;
 	--col-yellow: #ffff60;
-	--col-yellow: #ffff60;
 
-	--fsize-header: 1.5em;
-	--fsize-h1: 3em;
-	--fsize-h2: 2em;
+	--fsize-h1: 5em;
+	--fsize-h2: 3em;
+	--fsize-header: 2em;
+	--fsize-title: 1.5em;
 
 	font-family: "Kanit";
 	color: var(--col-fg);
@@ -23,18 +27,24 @@
 	box-sizing: border-box;
 }
 
+.title {
+	width: 66rem;
+	margin: 0 auto;
+}
+
 .title h1 {
 	font-size: var(--fsize-h1);
 	text-align: center;
+	line-height: 1em;
+	margin-bottom: 0.5em;
 }
 
 .title p {
 	margin: auto;
 	text-align: center;
+	font-size: var(--fsize-title);
 
 	width: 80%;
-
-	font-size: var(--fsize-header);
 }
 
 h2 {
@@ -44,6 +54,7 @@ h2 {
 #header {
 	background-color: var(--col-bg-light);
 
+	/* Boilerplate styles for navbars */
 	position: sticky;
 	top: 0;
 	left: 0;
