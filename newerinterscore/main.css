@@ -35,15 +35,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	margin: 0;
+	justify-items: center;
+}
+body p {
+	width: 80vw;
+}
 h2 {
 	font-size: var(--fsize-h2);
-}
-
-/* Exists to narrow all the prose down */
-.content {
-	max-width: 70vw;
-	min-width: max-content;
-	margin: 0 auto;
 }
 
 .title {
@@ -94,18 +94,24 @@ h2 {
 
 	color: var(--col-fg);
 	text-decoration: none;
+
+	/* TODO LATER header buttons transitioning like buttons
+	padding: 5px 15px;
+	*/
 }
 #header a:hover {
 	background: linear-gradient(90deg, var(--col-orange), var(--col-yellow) 50%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	/* TODO LATER header buttons transitioning like buttons
+	box-shadow: var(--shadow-s);
+	*/
 }
 
 #lettering {
 	font-weight: bold;
 }
 
-/* TODO NOW */
 .button-row {
 	display: flex;
 	gap: var(--gap-button-row);
@@ -119,8 +125,10 @@ h2 {
 	padding: 15px 20px;
 
 	color: var(--col-fg-dark);
+	transition: box-shadow 400ms ease;
 }
 .button:hover {
+	/* TODO NOW */
 	box-shadow: var(--shadow-s);
 }
 .main-button {
@@ -130,9 +138,21 @@ h2 {
 	transition: background-position 900ms ease;
 
 	color: var(--col-bg-dark);
+	box-shadow: var(--shadow-s);
 }
 .main-button:hover {
 	background-position: 100% 0;
+}
+
+.slide {
+	width: 100%;
+	background-color: pink; /* TODO PLACEHOLDER */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 30vh 100px;
 }
 
 @font-face {
