@@ -10,13 +10,10 @@
 	--col-orange: #ff9030;
 	--col-yellow: #ffff60;
 
-	--col-orange-darker: #803c00;
-	--col-yellow-darker: #999900;
-
+	--fsize: 1.5em;
+	--fsize-header: 2em;
 	--fsize-h1: 4em;
 	--fsize-h2: 3em;
-	--fsize-header: 2em;
-	--fsize-title: 1.5em;
 
 	--gap-button-row: 1em;
 
@@ -41,9 +38,11 @@ body {
 }
 body p {
 	width: 80vw;
+	font-size: var(--fsize);
 }
 h2 {
 	font-size: var(--fsize-h2);
+	margin: 2rem 0 1rem 0;
 }
 
 .title {
@@ -64,7 +63,7 @@ h2 {
 }
 .title p {
 	text-align: center;
-	font-size: var(--fsize-title);
+	font-size: var(--fsize);
 
 	width: 80%;
 }
@@ -119,7 +118,7 @@ h2 {
 .button {
 	text-decoration: none;
 
-	font-size: var(--fsize-title);
+	font-size: var(--fsize);
 	border-radius: 10% / 30%;
 
 	padding: 15px 20px;
@@ -152,7 +151,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 
-	padding: 30vh 100px;
+	padding: 20vh 100px;
 }
 
 @font-face {
